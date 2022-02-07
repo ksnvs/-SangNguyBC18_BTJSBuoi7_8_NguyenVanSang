@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col text-center">
+            <div class="form-group">
+              <label for="inputInterger"> Nhập số nguyên:</label>
+              <input
+                type="text"
+                name="inputInterger"
+                id="txtIntNumber"
+                class="form-control"
+                placeholder="Vui lòng nhập số nguyên"
+                aria-describedby="helpId"
+              />
+            </div>
+
+            <button onclick="addNumToArray()" class="btn btn-success mb-3">
+              Thêm vào Mãng
+            </button>
+            <div id="result"></div>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </section>
+    <section class="baiTap1">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col text-center">
+            <h3>Bài tập 1: Tổng số nguyên dương trong mãng</h3>
+            <button onclick="sumNum()" class="btn btn-success mb-3">
+              Tính tổng các số dương
+            </button>
+            <div id="result1"></div>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </section>
+    <section class="baiTap2">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col text-center">
+            <h3>Bài tập 2: Đếm số nguyên dương trong mãng</h3>
+            <button onclick="countNum()" class="btn btn-success mb-3">
+              Đếm số dương
+            </button>
+            <div id="result2"></div>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </section>
+    <section class="baiTap3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col text-center">
+            <h3>Bài tập 3: Tìm số nhỏ nhất trong mãng</h3>
+            <button onclick="minNum()" class="btn btn-success mb-3">
+              Tìm số nhỏ nhất
+            </button>
+            <div id="result3"></div>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </section>
+    <section class="baiTap4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col text-center">
+            <h3>Bài tập 4: Tìm số dương nhỏ nhất trong mãng</h3>
+            <button onclick="minNumMoreThanZero()" class="btn btn-success mb-3">
+              Tìm số dương nhỏ nhất
+            </button>
+            <div id="result4"></div>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </section>
+    <section class="baiTap5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col text-center">
+            <h3>Bài tập 5: Tìm số chẵn cuối cùng trong mãng</h3>
+            <button onclick="findEvenNum()" class="btn btn-success mb-3">
+              Tìm số chẵn cuối cùng
+            </button>
+            <div id="result5"></div>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </section>
+    <section class="baiTap6">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col text-center">
+            <h3>Bài tập 6: Đổi chỗ 2 giá trị trong mãng theo vị trí</h3>
+            <div class="form-group">
+              <label for="inputPos1"> Nhập vị trí thứ nhất:</label>
+              <input
+                type="text"
+                name="inputPos1"
+                id="txtIntPos1"
+                class="form-control"
+                placeholder="Vui lòng nhập vị trí thứ nhất"
+                aria-describedby="helpId"
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputPos2"> Nhập vị trí thứ hai:</label>
+              <input
+                type="text"
+                name="inputPos2"
+                id="txtIntPos2"
+                class="form-control"
+                placeholder="Vui lòng nhập vị trí thứ hai"
+                aria-describedby="helpId"
+              />
+            </div>
+            <button onclick="changePosition()" class="btn btn-success mb-3">
+              Đổi giá trị
+            </button>
+            <div id="result6"></div>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </section>
+    <section class="baiTap7">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col text-center">
+            <h3>Bài tập 7: Sắp xếp mãng theo thứ tự tăng dần</h3>
+            <button onclick="sortAscending()" class="btn btn-success mb-3">
+              Sắp xếp tăng dần
+            </button>
+            <div id="result7"></div>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </section>
+    <section class="baiTap8">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col text-center">
+            <h3>Bài tập 8: Tìm số nguyên tố đầu tiên trong mãng</h3>
+            <button onclick="findSNT()" class="btn btn-success mb-3">
+              Tìm số nguyên tố
+            </button>
+            <div id="result8"></div>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </section>
+    <section class="baiTap9">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col text-center">
+            <h3>Bài tập 9: Tìm số nguyên trong mãng số thực</h3>
+            <div class="form-group">
+              <label for="inputFloat"> Nhập số thực:</label>
+              <input
+                type="text"
+                name="inputFloat"
+                id="txtFloatNumber"
+                class="form-control"
+                placeholder="Vui lòng nhập số thực"
+                aria-describedby="helpId"
+              />
+            </div>
+
+            <button onclick="addNumToArrayFloat()" class="btn btn-success mb-3">
+              Thêm vào Mãng
+            </button>
+            <button onclick="findSN()" class="btn btn-success mb-3">
+              Tìm số nguyên
+            </button>
+            <div id="result9_1"></div>
+            <div id="result9_2"></div>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </section>
+    <section class="baiTap10">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col text-center">
+            <h3>
+              Bài tập 10: So sánh số lượng số dương và số lượng số âm trong mãng
+            </h3>
+
+            <button onclick="Compare()" class="btn btn-success mb-3">
+              So sánh
+            </button>
+            <div id="result10"></div>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./BaiTap.js"></script>
+  </body>
+</html>
